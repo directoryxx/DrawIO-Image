@@ -13,8 +13,8 @@ class UploadController extends Controller
     {
         //init file to a variable
         $file = $request->file('file');
+        //dd($file);
         $loop = $request->post('loop');
-        $loop = $loop-1;
         //get mimetype
         $mimetype = $file->getMimeType();
         //dd($mimetype);
